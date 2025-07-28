@@ -1,0 +1,89 @@
+/* default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #1e3c72, #2a5298); /* NEW */
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* main calculator container */
+.calculator {
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border: 1px solid #ccc;
+  width: 40%;
+  height: 80%;
+}
+
+/* Heading */
+h1 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Input container */
+.inputcontainer {
+  width: 100%;
+  padding: 2px;
+}
+
+/* Input field */
+.biginput {
+  width: 100%;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+  text-align: right;
+}
+
+#display{
+  text-align: right;
+}
+
+/* Buttons field */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+button {
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+/* Responsive for small screens */
+@media (max-width: 400px) {
+  .buttons button {
+    padding: 12px;
+    font-size: 18px;
+  }
+
+  .calculator {
+    width: 90%;
+    height: auto;
+  }
+}
